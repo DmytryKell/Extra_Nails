@@ -1,0 +1,384 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: fffff;
+    line-height: 1.5;
+}
+
+.html{
+   scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, a{
+    margin: 0;
+}
+
+
+.conteiner {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    height: 100vh;
+
+    opacity: 0.4;
+    background: url("/src/img/morning.jpg") 
+    center no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: cover;
+}
+
+.intro_inner{
+    width: 100%;
+    max-width: 863px;
+    margin: 0 auto;
+}
+
+.intro_title{
+    color: black;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.header {
+    width: 100%;
+
+    position: absolute;
+    left: 0px;
+    right: 0;
+    top: 31px;
+    z-index: 1000;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.header_nav {
+    font-size: 14px;
+    text-transform: uppercase;
+    
+}
+
+.nav_link {
+    color: black;
+    text-decoration: none;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    transition: color 0.2s linear;
+}
+
+.nav_link::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+
+    background-color: #928888;
+
+    transition: opacity 0.2s linear;
+
+    position: absolute;
+}
+
+.nav_link:hover{
+    color: #928888;
+}
+
+.nav_link:hover::after{
+    opacity: 1;
+}
+
+.user{
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+
+.user_content{
+    font-size: 14px;
+   
+}
+
+.user_avatar{
+    background-image: url(/src/img/avatar-asya.png); /*силка на зображення*/
+    background-size: cover; /*розмір картинки зберігая її пропорції*/
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user_avatar:hover{
+    opacity: 0.5;
+}
+
+.block_about{
+    height: 500px;
+    background: #07203F;
+}
+
+.about{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.about_title{
+    color: #FFFF;
+    width:400px;
+    font-size: 22px;
+}
+
+.about_btn{
+    width: 210px;
+    height: 46px;
+    background: #D9D9D9;
+    border-radius: 10px;
+
+    display: block;
+    text-align: center;
+    line-height: 45px;
+   
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    
+
+    transition: 0.5s;
+}
+
+.about_btn:hover{
+    background:#e9a079;
+}
+
+.about_image{
+    background-image: url(/src/img/love.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.block_product {
+    height: 1500px;
+    background: #EADED4;
+    align-items: center; 
+}
+
+.product_title{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
+    font-size: 32px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+.card_title{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card_image_one{
+    width: 260px;
+    height: 320px;
+    background-image: url(/src/img/product.png);
+    background-size: cover;
+    border-radius: 15%;
+}
+
+.card_image_two{
+    width: 260px;
+    height: 320px;
+    background-image: url(/src/img/hands.jpg);
+    background-size: cover;
+    border-radius: 15%;
+}
+
+.card_image_tree{
+    width: 260px;
+    height: 320px;
+    background-image: url(/src/img/work.jpg);
+    background-size: cover;
+    border-radius: 15%;
+}
+
+.card_button{
+    width: 210px;
+    height: 46px;
+    background: #D9D9D9;
+    border-radius: 10px;
+
+    display: block;
+    text-align: center;
+    line-height: 45px;
+   
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    
+
+    transition: 0.5s;
+}
+
+.card_button:hover{
+    background:#e9a079;
+}
+
+.block_contacts{
+    height: 600px;
+    background: #07203F;
+}
+
+.contact_title{
+    display: flex;
+    padding: 30px;
+    font-size: 24px;
+    color: #D9D9D9;
+    justify-content: center;
+}
+
+.contact_form{
+    display: flex;
+    justify-content: space-between;
+}
+
+label{
+    font-size: 18px;
+    color: #D9D9D9;
+    padding: 15px 0px;
+}
+
+input{
+    width: 360px;
+    height: 46px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 15px;
+    margin: 15px 0px;
+}
+
+.contact_image{
+    background-image: url(/src/img/plants.jpg);
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.contact_button{
+    width: 210px;
+    height: 46px;
+    background: #D9D9D9;
+    border-radius: 10px;
+
+    display: block;
+    text-align: center;
+    line-height: 45px;
+   
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    
+
+    transition: 0.5s;
+}
+
+.contact_button:hover{
+    background:#e9a079;
+}
+
+
+
+.footer{
+    height: 200px;
+    background: #EADED4;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+    width: 560px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+#instagram{
+    background: url(/src/img/instagram-logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+#instagram:hover{
+    opacity: 0.6;
+}
+
+#telegram{
+    background: url(/src/img/telegram-logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+}
+
+#telegram:hover{
+    opacity: 0.6;
+}
+
+#facebook{
+    background: url(/src/img/facebook-logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+}
+
+#facebook:hover{
+    opacity: 0.6;
+}
